@@ -1,60 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Funding</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/funding.css">
+    <script src="js/app.js" defer></script>
+    <script src="js/funding.js" defer></script>
+
+    <title>Raston Lab - Funding</title>
 </head>
 
 <body>
-    <header>
-        <h1>Funding</h1>
-    </header>
+    <nav class="navbar">
+        <a class="nav-title" href="index.html">Raston Lab</a>
 
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./people.html">People</a></li>
-            <li><a href="./research.html">Research</a></li>
-            <li><a href="./education.html">Education</a></li>
-            <li><a href="https://scholar.google.com/citations?hl=en&user=v537-TgAAAAJ" target="_blank">Publications</a></li>
-            <li><a href="./funding.html">Funding</a></li>
-        </ul>
+        <a class="toggle-button" href="#">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
+                <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://scholar.google.com/citations?hl=en&user=v537-TgAAAAJ" target="_blank">Publications</a></li>
+                <li class="nav-item"><a class="nav-link nav-active" href="funding.html">Funding</a></li>
+            </ul>
+        </div>
     </nav>
-
-    <section>
+    
+    <main>
         <article>
-            <figure>
-                <img width="200" height="200" src="images/nsf-logo.png" alt="NSF logo"/>
-                <figcaption>NSF CAREER Award (2022-2027)</figcaption>
-                <figcaption>NSF MRI Grant (2020-2023)</figcaption>
-            </figure>
+            <section>
+                <p id="funding-text">We are grateful to the following organizations for financial support:</p>
+            </section>
         </article>
 
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
         <article>
-            <figure>
-                <img width="200" height="100" src="images/rcsa-logo.png" alt="RCSA logo"/>
+            <div class="funding-slide fade">
+                <img src="images/nsf-logo.png" alt="National Science Foundataion logo">
+                <figcaption>NSF CAREER Award (2022-2027), NSF MRI Grant (2020-2023)</figcaption>
+            </div>
+              
+            <div class="funding-slide fade">
+                <img src="images/rescorp-logo.png" alt="Research Corporation for Science Advancement logo">
                 <figcaption>RCSA Cottrell Scholar Award (2019-2022)</figcaption>
-            </figure>
-        </article>
-
-        <article>
-            <figure>
-                <img width="200" height="200" src="images/acsprf-logo.png" alt="ACS PRF logo"/>
+            </div>
+              
+            <div class="funding-slide fade">
+                <img src="images/acs-prf-logo.jpg" alt="American Chemistry Society Petroleum Research Fund logo">
                 <figcaption>ACS PRF Undergraduate New Investigator Grant (2016-2018)</figcaption>
-            </figure>
-        </article>
+            </div>
 
-        <article>
-            <figure>
-                <img width="200" height="200" src="images/jmu-logo.png" alt="JMU logo"/>
+            <div class="funding-slide fade">
+                <img src="images/jmu-logo.png" alt="James Madison University logo">
                 <figcaption>JMU Startup Funds (2015)</figcaption>
-            </figure>
+            </div>
         </article>
-    </section>
+    </main>
 
-    <footer>
-        <p>Raston Lab ©2022</p>
+    <footer class="footer">
+        <div class="foot-container">
+            © 2022
+        </div>
     </footer>
 </body>
 

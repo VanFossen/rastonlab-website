@@ -1,0 +1,27 @@
+/* -------------------- main -------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-start;
+    flex-grow: 1;
+
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-link {
+    color: cornflowerblue;
+    transition: all 0.5s ease;
+}
+
+.main-link:hover {
+    color: blueviolet;
+    transition: all 0.5s ease;
+}

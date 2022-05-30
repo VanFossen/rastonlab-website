@@ -1,0 +1,58 @@
+/* -------------------- main -------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-start;
+    flex-grow: 1;
+
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+h2 {
+    font-size: 40px;
+    border-bottom: 1px solid white;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.main-header {
+    color: cornflowerblue;
+    transition: all 0.5s ease;
+}
+
+.main-header:hover {
+    color: blueviolet;
+    transition: all 0.5s ease;
+}
+
+.main-link {
+    color: cornflowerblue;
+    transition: all 0.5s ease;
+}
+
+.main-link:hover {
+    color: blueviolet;
+    transition: all 0.5s ease;
+}
+
+.research-container {
+    padding: 1rem;
+    margin: 1rem;
+    border: 3px solid white;
+    border-radius: 25px;
+}

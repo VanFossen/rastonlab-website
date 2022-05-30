@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>People</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/people.css">
+    <script src="js/app.js" defer></script>
+    <title>Raston Lab - People</title>
 </head>
 
 <body>
-    <header>
-        <h1>People</h1>
-    </header>
+    <nav class="navbar">
+        <a class="nav-title" href="index.html">Raston Lab</a>
 
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./people.html">People</a></li>
-            <li><a href="./research.html">Research</a></li>
-            <li><a href="./education.html">Education</a></li>
-            <li><a href="https://scholar.google.com/citations?hl=en&user=v537-TgAAAAJ" target="_blank">Publications</a></li>
-            <li><a href="./funding.html">Funding</a></li>
-        </ul>
+        <a class="toggle-button" href="#">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link nav-active" href="people.html">People</a></li>
+                <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://scholar.google.com/citations?hl=en&user=v537-TgAAAAJ" target="_blank">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="funding.html">Funding</a></li>
+            </ul>
+        </div>
     </nav>
+    
+    <main class="main-container">
+        <figure>
+            <img width="400" height="auto" src="images/paul-raston-headshot.png" alt="Photo of Paul L. Raston"/>
+            <figcaption id="figure-caption">Paul L. Raston (he/him)</figcaption>
+            <p>Associate Professor, James Madison University, USA</p>
+            <p>Ramsay Fellow, University of Adelaide, Australia, 2013-2015</p>
+            <p>Postdoctoral Fellow, University of Georgia, USA, 2011-2013 (Advisor - Gary E. Douberly)</p>
+            <p>Postdoctoral Fellow, University of Alberta, Canada, 2007-2011 (Advisor - Wolfgang Jäger)</p>
+            <p>Ph.D., University of Wyoming, USA, 2007 (Advisor - David T. Anderson)</p>
+            <p>Ph.D., University of Wyoming, USA, 2007 (Advisor - David T. Anderson)</p>
+        </figure>
+    </main>
 
-    <section>
-        <article>
-            <figure>
-                <img width="200" height="100" src="images/paul-raston-headshot.png" alt="Photo of Paul L. Raston"/>
-                <figcaption>Paul L. Raston (he/him)</figcaption>
-            </figure>
-
-            <section>
-                <p>Associate Professor, James Madison University, USA</p>
-                <p>Ramsay Fellow, University of Adelaide, Australia, 2013-2015</p>
-                <p>Postdoctoral Fellow, University of Georgia, USA, 2011-2013 (Advisor - Gary E. Douberly)</p>
-                <p>Postdoctoral Fellow, University of Alberta, Canada, 2007-2011 (Advisor - Wolfgang Jäger)</p>
-                <p>Ph.D., University of Wyoming, USA, 2007 (Advisor - David T. Anderson)</p>
-                <p>Ph.D., University of Wyoming, USA, 2007 (Advisor - David T. Anderson)</p>
-            </section>
-        </article>
-
-        <!-- Template for others -->
-        <!-- <article>
-            <figure>
-                <img width="" height="" src=" alt="" />
-                <figcaption>Name</figcaption>
-            </figure>
-
-            <section>
-                <p>Degrees/other information</p>
-            </section>
-        </article> -->
-    </section>
-
-    <footer>
-        <p>Raston Lab ©2022</p>
+    <footer class="footer">
+        <div class="foot-container">
+            © 2022
+        </div>
     </footer>
 </body>
 

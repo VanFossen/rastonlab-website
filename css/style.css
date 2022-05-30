@@ -1,0 +1,146 @@
+* {
+    font-family: 'Roboto Serif', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 0;
+
+    min-height: 100vh;
+    width: 80%;
+
+    background-color: #212121;
+}
+
+/* -------------------- navbar -------------------- */
+/* nav */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: transparent;
+    color: white;
+}
+
+/* div */
+.nav-container {
+    height: 100%;
+}
+
+/* ul */
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* li */
+.nav-item {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* a */
+.nav-link, .nav-title {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    padding: 3px;
+    transition: all 0.5s ease;
+}
+
+.nav-link:hover, .nav-title:hover {
+    color: cornflowerblue;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.nav-active {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.toggle-button {
+    position: absolute;
+    display: none;
+    right: 1rem;
+    margin: 1rem;
+    padding: 3px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    /* div */
+    .nav-container {
+        display: none;
+        width: 100%;
+    }
+
+    /* ul */
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+
+        border-top: solid 1px grey;
+        border-bottom: solid 1px grey;
+    }
+
+    /* li */
+    .nav-item {
+        text-align: center;
+    }
+
+    /* a */
+    .nav-link {
+        margin: 1rem 1rem;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .bar.active {
+        background-color: grey;
+    }
+}
+
+/* -------------------- footer -------------------- */
+.footer {
+    position: relative;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    text-align: center;
+}
+
+.foot-container {
+    color: white;
+}

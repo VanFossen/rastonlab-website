@@ -1,0 +1,28 @@
+/* -------------------- main -------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-start;
+    flex-grow: 1;
+
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+figure {
+    padding: 1rem;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#figure-caption {
+    font-size: 30px;
+    border-bottom: 1px solid white;
+}

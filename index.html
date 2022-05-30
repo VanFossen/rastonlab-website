@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/app.js" defer></script>
+    <title>Raston Lab - Home</title>
 </head>
 
 <body>
-    <header>
-        <h1>Home</h1>
-    </header>
+    <nav class="navbar">
+        <a class="nav-title nav-active" href="index.html">Raston Lab</a>
 
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./people.html">People</a></li>
-            <li><a href="./research.html">Research</a></li>
-            <li><a href="./education.html">Education</a></li>
-            <li><a href="https://scholar.google.com/citations?hl=en&user=v537-TgAAAAJ" target="_blank">Publications</a></li>
-            <li><a href="./funding.html">Funding</a></li>
-        </ul>
+        <a class="toggle-button" href="#">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
+                <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://scholar.google.com/citations?hl=en&user=v537-TgAAAAJ" target="_blank">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Funding</a></li>
+            </ul>
+        </div>
     </nav>
-
-    <section>
+    
+    <main class="main-container">
         <article>
             <section>
-                <p>Welcome to the website of the Raston Group! Spectroscopy is at the heart of what we do; whether it be developing virtual spectrometers for <a href="./education.html">education</a>, or utilizing real (physical) spectrometers for <a href="./research.html">research</a>. We value an inclusive environment, and welcome all folks into our laboratories. Here's a group photo from the summer of 2022:</p>
+                <p id="main-text">Welcome to the website of the Raston Group! Spectroscopy is at the heart of what we do; whether it be developing virtual spectrometers for <a class="main-link" href="./education.html">education</a>, or utilizing real (physical) spectrometers for <a class="main-link" href="./research.html">research</a>. We value an inclusive environment, and welcome all folks into our laboratories. Here's a group photo from the summer of 2022:</p>
             </section>
-
-            <figure>
-                <img width="200" height="100" src="https://www.jmu.edu/_images/default/JMUopengraphimage.jpg" alt="Photo of the 2022 summer research group"/>
-            </figure>
         </article>
 
         <article>
             <section>
-                <p>The beauty of a living thing is not the atoms that go into it, but the way those atoms are put together - Carl Sagan</p>
+                <p id="quote-text">The beauty of a living thing is not the atoms that go into it, but the way those atoms are put together - Carl Sagan</p>
             </section>
         </article>
-    </section>
+    </main>
 
-    <footer>
-        <p>Raston Lab ©2022</p>
+    <footer class="footer">
+        <div class="foot-container">
+            © 2022
+        </div>
     </footer>
 </body>
 

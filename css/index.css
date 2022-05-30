@@ -1,0 +1,39 @@
+/* -------------------- main -------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    text-align: center;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#main-text {
+    font-size: 35px;
+}
+
+.main-link {
+    color: cornflowerblue;
+    transition: all 0.5s ease;
+}
+
+.main-link:hover {
+    color: blueviolet;
+    transition: all 0.5s ease;
+}
+
+#quote-text {
+    padding: 1rem;
+    font-size: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}

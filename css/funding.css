@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    color: white;
+}
+
+#funding-text {
+    font-size: 30px;
+    border-bottom: 1px solid white;
+}
+
+.funding-slide {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    vertical-align: middle;
+    max-height: 300px;
+    max-width: 300px;
+    padding: 1rem;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-delay: 1s;
+  -webkit-animation: arrowInOut 5s linear forwards;
+  animation: arrowInOut 5s linear forwards;
+}
+
+/* https://stackoverflow.com/questions/49949881/css-keyframes-fade-in-hold-and-fade-out */
+@-webkit-keyframes arrowInOut {
+    0%,100% {opacity: 0;}
+    30%, 80% {opacity: 1;}
+}
+
+@keyframes arrowInOut {
+    0%,100% {opacity: 0;}
+    30%, 80% {opacity: 1;}
+}
